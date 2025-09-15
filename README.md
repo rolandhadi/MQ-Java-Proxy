@@ -108,4 +108,4 @@ so SV Designer can connect successfully to MQ channels that require strict Ciphe
 
 ## 📄 License
 
-MIT (or your organization’s standard).
+Use at your own risk
