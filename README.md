@@ -73,17 +73,17 @@ so SV Designer can connect successfully to MQ channels that require strict Ciphe
 
 | Flag | Description |
 |------|-------------|
-| `--mode tls|plain` | Upstream mode (default `tls`) |
+| `--mode tls or plain` | Upstream mode (default `tls`) |
 | `--listen HOST:PORT` | Local bind (default `127.0.0.1:9444`) |
 | `--target HOST:PORT` | **Required.** Upstream host:port |
 | `--sni HOST` | SNI value to advertise |
-| `--hostname-verification true|false` | Verify CN/SAN against host (default `false`) |
+| `--hostname-verification true or false` | Verify CN/SAN against host (default `false`) |
 | `--trustcert PATH` | Trust server using a single `.cer` or `.pem` |
 | `--truststore PATH` | Trust server with JKS/PKCS12 truststore |
-| `--truststore-type JKS|PKCS12` | Truststore type (auto-guessed if omitted) |
+| `--truststore-type JKS or PKCS12` | Truststore type (auto-guessed if omitted) |
 | `--truststore-pass PASS` | Truststore password |
 | `--keystore PATH` | Client identity for mTLS (JKS/PKCS12) |
-| `--keystore-type JKS|PKCS12` | Keystore type (auto-guessed if omitted) |
+| `--keystore-type JKS or PKCS12` | Keystore type (auto-guessed if omitted) |
 | `--keystore-pass PASS` | Keystore password |
 
 > If both `--trustcert` and `--truststore` are provided, `--trustcert` takes precedence.
