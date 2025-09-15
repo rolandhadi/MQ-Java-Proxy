@@ -34,7 +34,7 @@ so SV Designer can connect successfully to MQ channels that require strict Ciphe
 
 ## 🔨 Build
 
-    javac Proxy.java
+    javac MQProxy.java
 
 ---
 
@@ -42,7 +42,7 @@ so SV Designer can connect successfully to MQ channels that require strict Ciphe
 
 ### TLS (server trust with single `.cer`)
 
-    java Proxy ^
+    java MQProxy ^
       --mode tls ^
       --listen 127.0.0.1:9444 ^
       --target mq.example.com:1414 ^
@@ -52,7 +52,7 @@ so SV Designer can connect successfully to MQ channels that require strict Ciphe
 
 ### TLS + mTLS (keystore + truststore)
 
-    java Proxy ^
+    java MQProxy ^
       --mode tls ^
       --listen 127.0.0.1:9444 ^
       --target mq.example.com:1414 ^
@@ -65,7 +65,7 @@ so SV Designer can connect successfully to MQ channels that require strict Ciphe
 
 ### Plain TCP (no TLS)
 
-    java Proxy --mode plain --listen 127.0.0.1:9444 --target 10.0.0.5:1414
+    java MQProxy --mode plain --listen 127.0.0.1:9444 --target 10.0.0.5:1414
 
 ---
 
